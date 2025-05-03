@@ -1,0 +1,310 @@
+{
+  "version": 3,
+  "pages404": true,
+  "caseSensitive": false,
+  "basePath": "",
+  "redirects": [
+    {
+      "source": "/:path+/",
+      "destination": "/:path+",
+      "internal": true,
+      "statusCode": 308,
+      "regex": "^(?:/((?:[^/]+?)(?:/(?:[^/]+?))*))/$"
+    }
+  ],
+  "headers": [],
+  "dynamicRoutes": [
+    {
+      "page": "/auth/reset/[token]",
+      "regex": "^/auth/reset/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPtoken": "nxtPtoken"
+      },
+      "namedRegex": "^/auth/reset/(?<nxtPtoken>[^/]+?)(?:/)?$"
+    },
+    {
+      "page": "/components/farmerboard/mydetails/[uploadId]",
+      "regex": "^/components/farmerboard/mydetails/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPuploadId": "nxtPuploadId"
+      },
+      "namedRegex": "^/components/farmerboard/mydetails/(?<nxtPuploadId>[^/]+?)(?:/)?$"
+    },
+    {
+      "page": "/components/inspectorboard/inspectseeds/[inspectseed]",
+      "regex": "^/components/inspectorboard/inspectseeds/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPinspectseed": "nxtPinspectseed"
+      },
+      "namedRegex": "^/components/inspectorboard/inspectseeds/(?<nxtPinspectseed>[^/]+?)(?:/)?$"
+    },
+    {
+      "page": "/components/inspectorboard/mydetails/[update]",
+      "regex": "^/components/inspectorboard/mydetails/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPupdate": "nxtPupdate"
+      },
+      "namedRegex": "^/components/inspectorboard/mydetails/(?<nxtPupdate>[^/]+?)(?:/)?$"
+    },
+    {
+      "page": "/components/inspectorboard/writereports/reports/[reportId]",
+      "regex": "^/components/inspectorboard/writereports/reports/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPreportId": "nxtPreportId"
+      },
+      "namedRegex": "^/components/inspectorboard/writereports/reports/(?<nxtPreportId>[^/]+?)(?:/)?$"
+    },
+    {
+      "page": "/components/supplierboard/add-batch/[batch]",
+      "regex": "^/components/supplierboard/add\\-batch/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPbatch": "nxtPbatch"
+      },
+      "namedRegex": "^/components/supplierboard/add\\-batch/(?<nxtPbatch>[^/]+?)(?:/)?$"
+    },
+    {
+      "page": "/components/supplierboard/seedsandbatches/[seedbatches]",
+      "regex": "^/components/supplierboard/seedsandbatches/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPseedbatches": "nxtPseedbatches"
+      },
+      "namedRegex": "^/components/supplierboard/seedsandbatches/(?<nxtPseedbatches>[^/]+?)(?:/)?$"
+    }
+  ],
+  "staticRoutes": [
+    {
+      "page": "/",
+      "regex": "^/(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/(?:/)?$"
+    },
+    {
+      "page": "/_not-found",
+      "regex": "^/_not\\-found(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/_not\\-found(?:/)?$"
+    },
+    {
+      "page": "/auth",
+      "regex": "^/auth(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/auth(?:/)?$"
+    },
+    {
+      "page": "/auth/forgot",
+      "regex": "^/auth/forgot(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/auth/forgot(?:/)?$"
+    },
+    {
+      "page": "/auth/login",
+      "regex": "^/auth/login(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/auth/login(?:/)?$"
+    },
+    {
+      "page": "/auth/register",
+      "regex": "^/auth/register(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/auth/register(?:/)?$"
+    },
+    {
+      "page": "/components/about",
+      "regex": "^/components/about(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/components/about(?:/)?$"
+    },
+    {
+      "page": "/components/adminboard",
+      "regex": "^/components/adminboard(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/components/adminboard(?:/)?$"
+    },
+    {
+      "page": "/components/adminboard/reports",
+      "regex": "^/components/adminboard/reports(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/components/adminboard/reports(?:/)?$"
+    },
+    {
+      "page": "/components/adminboard/seeds",
+      "regex": "^/components/adminboard/seeds(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/components/adminboard/seeds(?:/)?$"
+    },
+    {
+      "page": "/components/adminboard/users",
+      "regex": "^/components/adminboard/users(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/components/adminboard/users(?:/)?$"
+    },
+    {
+      "page": "/components/contact",
+      "regex": "^/components/contact(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/components/contact(?:/)?$"
+    },
+    {
+      "page": "/components/farmerboard",
+      "regex": "^/components/farmerboard(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/components/farmerboard(?:/)?$"
+    },
+    {
+      "page": "/components/farmerboard/cart",
+      "regex": "^/components/farmerboard/cart(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/components/farmerboard/cart(?:/)?$"
+    },
+    {
+      "page": "/components/farmerboard/mydetails",
+      "regex": "^/components/farmerboard/mydetails(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/components/farmerboard/mydetails(?:/)?$"
+    },
+    {
+      "page": "/components/farmerboard/report",
+      "regex": "^/components/farmerboard/report(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/components/farmerboard/report(?:/)?$"
+    },
+    {
+      "page": "/components/farmerboard/scanseeds",
+      "regex": "^/components/farmerboard/scanseeds(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/components/farmerboard/scanseeds(?:/)?$"
+    },
+    {
+      "page": "/components/inspectorboard",
+      "regex": "^/components/inspectorboard(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/components/inspectorboard(?:/)?$"
+    },
+    {
+      "page": "/components/inspectorboard/enter_seed-batch-data",
+      "regex": "^/components/inspectorboard/enter_seed\\-batch\\-data(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/components/inspectorboard/enter_seed\\-batch\\-data(?:/)?$"
+    },
+    {
+      "page": "/components/inspectorboard/inspectseeds",
+      "regex": "^/components/inspectorboard/inspectseeds(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/components/inspectorboard/inspectseeds(?:/)?$"
+    },
+    {
+      "page": "/components/inspectorboard/inspectseeds/allseeds",
+      "regex": "^/components/inspectorboard/inspectseeds/allseeds(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/components/inspectorboard/inspectseeds/allseeds(?:/)?$"
+    },
+    {
+      "page": "/components/inspectorboard/inspectseeds/approved",
+      "regex": "^/components/inspectorboard/inspectseeds/approved(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/components/inspectorboard/inspectseeds/approved(?:/)?$"
+    },
+    {
+      "page": "/components/inspectorboard/inspectseeds/pending",
+      "regex": "^/components/inspectorboard/inspectseeds/pending(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/components/inspectorboard/inspectseeds/pending(?:/)?$"
+    },
+    {
+      "page": "/components/inspectorboard/inspectseeds/quarantine",
+      "regex": "^/components/inspectorboard/inspectseeds/quarantine(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/components/inspectorboard/inspectseeds/quarantine(?:/)?$"
+    },
+    {
+      "page": "/components/inspectorboard/mydetails",
+      "regex": "^/components/inspectorboard/mydetails(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/components/inspectorboard/mydetails(?:/)?$"
+    },
+    {
+      "page": "/components/inspectorboard/uploadInfo",
+      "regex": "^/components/inspectorboard/uploadInfo(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/components/inspectorboard/uploadInfo(?:/)?$"
+    },
+    {
+      "page": "/components/inspectorboard/writereports",
+      "regex": "^/components/inspectorboard/writereports(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/components/inspectorboard/writereports(?:/)?$"
+    },
+    {
+      "page": "/components/inspectorboard/writereports/reports",
+      "regex": "^/components/inspectorboard/writereports/reports(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/components/inspectorboard/writereports/reports(?:/)?$"
+    },
+    {
+      "page": "/components/inspectorboard/writereports/write",
+      "regex": "^/components/inspectorboard/writereports/write(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/components/inspectorboard/writereports/write(?:/)?$"
+    },
+    {
+      "page": "/components/supplierboard",
+      "regex": "^/components/supplierboard(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/components/supplierboard(?:/)?$"
+    },
+    {
+      "page": "/components/supplierboard/add-batch",
+      "regex": "^/components/supplierboard/add\\-batch(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/components/supplierboard/add\\-batch(?:/)?$"
+    },
+    {
+      "page": "/components/supplierboard/add-seeds",
+      "regex": "^/components/supplierboard/add\\-seeds(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/components/supplierboard/add\\-seeds(?:/)?$"
+    },
+    {
+      "page": "/components/supplierboard/mydetails",
+      "regex": "^/components/supplierboard/mydetails(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/components/supplierboard/mydetails(?:/)?$"
+    },
+    {
+      "page": "/components/supplierboard/seedsandbatches",
+      "regex": "^/components/supplierboard/seedsandbatches(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/components/supplierboard/seedsandbatches(?:/)?$"
+    },
+    {
+      "page": "/components/supplierboard/uploadInfo",
+      "regex": "^/components/supplierboard/uploadInfo(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/components/supplierboard/uploadInfo(?:/)?$"
+    },
+    {
+      "page": "/favicon.ico",
+      "regex": "^/favicon\\.ico(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/favicon\\.ico(?:/)?$"
+    }
+  ],
+  "dataRoutes": [],
+  "rsc": {
+    "header": "RSC",
+    "varyHeader": "RSC, Next-Router-State-Tree, Next-Router-Prefetch, Next-Router-Segment-Prefetch",
+    "prefetchHeader": "Next-Router-Prefetch",
+    "didPostponeHeader": "x-nextjs-postponed",
+    "contentTypeHeader": "text/x-component",
+    "suffix": ".rsc",
+    "prefetchSuffix": ".prefetch.rsc",
+    "prefetchSegmentHeader": "Next-Router-Segment-Prefetch",
+    "prefetchSegmentSuffix": ".segment.rsc",
+    "prefetchSegmentDirSuffix": ".segments"
+  },
+  "rewriteHeaders": {
+    "pathHeader": "x-nextjs-rewritten-path",
+    "queryHeader": "x-nextjs-rewritten-query"
+  },
+  "rewrites": []
+}

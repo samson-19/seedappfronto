@@ -1,0 +1,7 @@
+{
+  "headers": {
+    "x-nextjs-stale-time": "4294967294",
+    "x-nextjs-prerender": "1",
+    "x-next-cache-tags": "_N_T_/layout,_N_T_/components/layout,_N_T_/components/inspectorboard/layout,_N_T_/components/inspectorboard/inspectseeds/layout,_N_T_/components/inspectorboard/inspectseeds/pending/layout,_N_T_/components/inspectorboard/inspectseeds/pending/page,_N_T_/components/inspectorboard/inspectseeds/pending"
+  }
+}
