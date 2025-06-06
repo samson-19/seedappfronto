@@ -5,7 +5,7 @@ export default function Auth() {
   return (
     <div className="container d-flex justify-content-center align-items-center" style={{ minHeight: '80vh' }}>
       <div className="text-center p-5 rounded shadow-sm" style={{ maxWidth: '500px', backgroundColor: '#f8f9fa' }}>
-        <h2 className="mb-4 fw-bold">Welcome to Seed Authenticity Verification System</h2>
+        <h2 className="mb-4 fw-bold">Welcome to Seed App</h2>
         
         <p className="text-muted mb-4">
           To start using Seed App and access all features, please login or create a new account.

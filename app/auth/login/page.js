@@ -90,7 +90,7 @@ const handleInputChange = (e) => {
 
   <div style={{marginTop: 12, marginBottom: 20}}>
 
-    <p>No account? <Link href="/auth/register">Register</Link> </p>
+    <p>No account? <Link href="/auth/login">Login</Link> </p>
 
 
     <p>Forgot  <Link href="/auth/forgot">password?</Link> </p>

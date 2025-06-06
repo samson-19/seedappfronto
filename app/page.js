@@ -1,9 +1,41 @@
+// import { ShieldCheck } from 'lucide-react';
+
+// export default function Home() {
+//   return (
+//     <div
+//       className="min-vh-100 d-flex align-items-center justify-content-center text-white text-center"
+//       style={{
+//         backgroundImage: "url('https://www.fao.org/media/images/seedslibraries/default-album/uf132sn-00142391.jpg?sfvrsn=314c77f9_12')",
+//         backgroundSize: 'cover',
+//         backgroundPosition: 'center',
+//         position: 'relative',
+//       }}
+//     >
+//       {/* Dark overlay */}
+//       <div
+//         className="position-absolute top-0 start-0 w-100 h-100"
+//         style={{ backgroundColor: 'rgba(0, 0, 0, 0.6)', zIndex: 1 }}
+//       />
+
+//       {/* Content */}
+//       <div className="container position-relative z-2">
+//         <ShieldCheck size={64} className="mb-3" />
+//         <h1 className="display-4 fw-bold">Web Seed Verification</h1>
+//         <p className="lead">
+//           Ensure your seed data is authentic, tamper-proof, and securely validated.
+//         </p>
+//         <a href="/verify" className="btn btn-primary btn-lg mt-3">
+//           Verify Now
+//         </a>
+//       </div>
+//     </div>
+//   );
+// }
 
 'use client'
 
 import { useState } from 'react';
 import { Search, Crop,  CheckCircle, Upload, Shield, Info } from 'lucide-react';
-import Link from 'next/link';
 
 export default function Home() {
   const [searchQuery, setSearchQuery] = useState('');
@@ -114,10 +146,10 @@ export default function Home() {
         
         <footer className="mt-5 pt-5 text-light-emphasis">
           <div className="d-flex justify-content-center align-items-center small mb-3">
-            <Link href="#" className="text-decoration-none text-light me-3">About</Link>
-            <Link href="#" className="text-decoration-none text-light me-3">How It Works</Link>
-            <Link href="#" className="text-decoration-none text-light me-3">For Suppliers</Link>
-            <Link href="#" className="text-decoration-none text-light me-3">Contact</Link>
+            <a href="#" className="text-decoration-none text-light me-3">About</a>
+            <a href="#" className="text-decoration-none text-light me-3">How It Works</a>
+            <a href="#" className="text-decoration-none text-light me-3">For Suppliers</a>
+            <a href="#" className="text-decoration-none text-light me-3">Contact</a>
           </div>
           <p className="small mb-0 text-white">&copy; 2025 SeedVerify. All rights reserved.</p>
         </footer>

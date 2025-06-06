@@ -33,6 +33,9 @@ export function UserCheck() {
         return <Link className="nav-link" href="/components/supplierboard">SUPPLIER</Link>;
       case "farmer":
         return <Link className="nav-link" href="/components/farmerboard">FARMER</Link>;
+
+      case "dealer":
+        return <Link className="nav-link" href="/components/dealerboard">DEALER</Link>;  
       default:
         return null;
     }

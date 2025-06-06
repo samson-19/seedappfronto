@@ -38,7 +38,7 @@ export default function SingleSeedInspector() {
         setLoading(false)
       } catch (error) {
         console.error("Error fetching seed data:", error)
-        setMessage({ text: error.response?.data?.msg || "Failed to load seed data", type: "danger" })
+        setMessage({ text: response?.data?.msg || "Failed to load seed data", type: "danger" })
         setLoading(false)
       }
     }
@@ -96,7 +96,7 @@ export default function SingleSeedInspector() {
     setShowDeleteModal(true)
   }
 
-  // Update status of seed or batch
+  
   const handleStatusUpdate = async () => {
     try {
       let endpoint, payload;
@@ -105,7 +105,7 @@ export default function SingleSeedInspector() {
         endpoint = `${ApiUrl}/update_seed_status/${selectedItem._id}`
         payload = { seedStatus: selectedStatus }
       } else {
-        // For batch update, we need to specify which batch detail is being updated
+        
         endpoint = `${ApiUrl}/update_batch_status/${selectedBatchId}`
         payload = { 
           batchDetailId: selectedItem._id,
@@ -121,10 +121,11 @@ export default function SingleSeedInspector() {
       
       setShowStatusModal(false)
       setMessage({ text: `${modalType} status updated successfully`, type: "success" })
-      fetchSeedData()
+    
+      window.location.reload()
     } catch (error) {
-      console.error(`Error updating ${modalType} status:`, error)
-      setMessage({ text: error.response?.data?.msg || `Failed to update ${modalType} status`, type: "danger" })
+      console.log(`Error updating ${modalType} status:`, error)
+    
     }
   }
 
@@ -143,10 +144,10 @@ export default function SingleSeedInspector() {
         
         setShowDeleteModal(false)
         setMessage({ text: "Seed deleted successfully", type: "success" })
-        // Redirect to the seeds list page
+    
         router.push('/inspector/seeds')
       } else {
-        // For batch, delete specific batch detail
+      
         endpoint = `${ApiUrl}/delete_batch_detail/${selectedBatchId}`
         await axios.delete(endpoint, {
           headers: {
@@ -157,11 +158,11 @@ export default function SingleSeedInspector() {
         
         setShowDeleteModal(false)
         setMessage({ text: "Batch deleted successfully", type: "success" })
-        fetchSeedData()
+      
       }
     } catch (error) {
-      console.error(`Error deleting ${deleteItemType}:`, error)
-      setMessage({ text: error.response?.data?.msg || `Failed to delete ${deleteItemType}`, type: "danger" })
+      console.log(`Error deleting ${deleteItemType}:`, error)
+      
       setShowDeleteModal(false)
     }
   }

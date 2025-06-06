@@ -15,36 +15,9 @@ export default function SeedsAndBatches() {
   const usertoken = getSupertoken()
   
   useEffect(() => {
-
-    const fetchSeedsWithBatches = async () => {
-      try {
-        setIsLoading(true)
-        setError(null)
-        
-        let url = `${ApiUrl}/seeds-with-batches`
-        if (seedTypeFilter !== 'all') {
-          url = `${ApiUrl}/seeds/type/${seedTypeFilter}`
-        }
-        
-        const response = await axios.get(url, {
-          headers: {
-            Authorization: `Bearer ${usertoken}`
-          }
-        })
-        
-        setSeedsWithBatches(response.data.seedsWithBatches)
-        setIsLoading(false)
-      } catch (error) {
-        console.error('Error fetching seeds with batches:', error)
-        setError('Failed to load seeds and batches. Please try again later.')
-        setIsLoading(false)
-      }
-    }
-    
     fetchSeedsWithBatches()
   }, [seedTypeFilter])
-
-
+  
   const fetchSeedsWithBatches = async () => {
     try {
       setIsLoading(true)
@@ -69,8 +42,6 @@ export default function SeedsAndBatches() {
       setIsLoading(false)
     }
   }
-  
-  
   
   const toggleSeedExpansion = (seedId) => {
     setExpandedSeeds(prev => ({

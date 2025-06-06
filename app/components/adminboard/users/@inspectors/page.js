@@ -121,7 +121,7 @@ export default function Inspector() {
                   <div>
                   <span className="badge bg-primary rounded-pill" style={{cursor: "pointer"}}
                     title="Click to update inspector type"
-                  ><InspectorType inspectorId={inspector?._id} /></span>
+                  ><InspectorType inspectorId={inspector._id} /></span>
 
                   </div>
                   <button 
@@ -237,7 +237,7 @@ const InspectorType = ({ inspectorId }) => {
     fetchData()
   }, [inspectorId, usertoken])
 
-
+console.log(newType)
   const handleUpdateType = async () => {
     try {
       setIsLoading(true)

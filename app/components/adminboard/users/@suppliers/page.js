@@ -56,7 +56,7 @@ export default function Supplier() {
     
     try {
       setIsLoading(true)
-     const response =  await axios.put(
+       await axios.put(
         `${ApiUrl}/admin_manage_user_account/${currentSupplier._id}`,
         { role: newRole },
         {
@@ -65,8 +65,6 @@ export default function Supplier() {
           }
         }
       )
-
-      console.log(response.data.msg)
       
       
       const updatedSuppliers = suppliers.map(supplier => 
@@ -79,7 +77,7 @@ export default function Supplier() {
     
       window.bootstrap?.Modal.getInstance(document.getElementById('editRoleModal'))?.hide()
 
-      // window.location.reload()
+      window.location.reload()
       
       setIsLoading(false)
     } catch (error) {

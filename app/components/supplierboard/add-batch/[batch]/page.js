@@ -116,13 +116,13 @@ export default function AddBatch() {
                         <Col xs={12} md={6}>
                             <Form onSubmit={handleSubmit} encType="multipart/form-data">
                                 <Form.Group className="mb-3" controlId="formBasicBatchName">
-                                    <Form.Label>Batch Number</Form.Label>
+                                    <Form.Label>Batch Name</Form.Label>
                                     <Form.Control
                                         type="text"
                                         name="batchName"
                                         value={formData.batchName}
                                         onChange={handleInputChange}
-                                        placeholder="Write batch  number"
+                                        placeholder="Write batch  name"
                                         required
                                     />
                                 </Form.Group>
