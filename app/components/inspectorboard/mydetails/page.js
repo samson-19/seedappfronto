@@ -68,14 +68,14 @@ export default function MyDetails() {
                         ) : (
                             <div className="bg-gray-100 w-full h-full flex items-center justify-center">
                                 <span className="text-gray-400 text-2xl">
-                                    {user?.fullname?.charAt(0).toUpperCase() || '?'}
+                                {user?.first_name} {user?.last_name}
                                 </span>
                             </div>
                         )}
                     </div>
                     
                     <div className="flex-1">
-                        <h2 className="text-xl font-semibold">{user?.fullname || 'N/A'}</h2>
+                        <h2 className="text-xl font-semibold">{user?.first_name} {user?.last_name}</h2>
                         <p className="text-gray-600 mb-2">{user?.email || 'N/A'}</p>
                         
                     </div>

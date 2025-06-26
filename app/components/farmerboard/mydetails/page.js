@@ -47,7 +47,7 @@ export default function UserDetails() {
                   <Edit size={16} />
                 </Link>
               </div>
-              <h4 className="mt-3">{user?.fullname || 'User Name'}</h4>
+              <h4 className="mt-3">{user?.first_name} {user?.last_name}</h4>
               <span className="badge bg-success text-capitalize">{user?.role || 'Farmer'}</span>
             </div>
             <div className="col-md-8">
@@ -56,7 +56,7 @@ export default function UserDetails() {
                   <div className="d-flex w-100 justify-content-between">
                     <h5 className="mb-1">Full Name</h5>
                   </div>
-                  <p className="mb-1">{user?.fullname || 'Not Available'}</p>
+                  <p className="mb-1">{user?.first_name} {user?.last_name}</p>
                 </div>
                 <div className="list-group-item">
                   <div className="d-flex w-100 justify-content-between">

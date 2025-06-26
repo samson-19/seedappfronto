@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 7, "column": 0}, "map": {"version":3,"sources":["file://C%3A/Users/MR.PC/OneDrive/Desktop/SAVs/seed-app/front/app/components/adminboard/users/layout.js"],"sourcesContent":["import React from 'react'\r\n\r\nexport default function Userslayout({children, farmers, inspectors, suppliers}) {\r\n  return (\r\n    <>\r\n    {children}\r\n\r\n    <div>{farmers}</div>\r\n    <div>{suppliers}</div>\r\n    <div>{inspectors}</div>\r\n    \r\n    </>\r\n  )\r\n}\r\n"],"names":[],"mappings":";;;;AAAA;;;AAEe,SAAS,YAAY,EAAC,QAAQ,EAAE,OAAO,EAAE,UAAU,EAAE,SAAS,EAAC;IAC5E,qBACE;;YACC;0BAED,8OAAC;0BAAK;;;;;;0BACN,8OAAC;0BAAK;;;;;;0BACN,8OAAC;0BAAK;;;;;;;;AAIV","debugId":null}}]
+}

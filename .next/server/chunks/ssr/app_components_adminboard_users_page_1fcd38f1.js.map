@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 7, "column": 0}, "map": {"version":3,"sources":["file://C%3A/Users/MR.PC/OneDrive/Desktop/SAVs/seed-app/front/app/components/adminboard/users/page.js"],"sourcesContent":["'use client'\r\n\r\nimport React, { useState } from 'react'\r\n\r\nexport default function Users() {\r\n    const [users, setUsers] = useState([])\r\n\r\n  return (\r\n    <>\r\n    \r\n    \r\n    </>\r\n  )\r\n}\r\n"],"names":[],"mappings":";;;;AAEA;AAFA;;;AAIe,SAAS;IACpB,MAAM,CAAC,OAAO,SAAS,GAAG,CAAA,GAAA,qMAAA,CAAA,WAAQ,AAAD,EAAE,EAAE;IAEvC,qBACE;AAKJ","debugId":null}}]
+}

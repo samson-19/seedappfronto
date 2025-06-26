@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 7, "column": 0}, "map": {"version":3,"sources":["file://C%3A/Users/MR.PC/OneDrive/Desktop/SAVs/seed-app/front/app/components/farmerboard/mydetails/loading.js"],"sourcesContent":["'use client'\r\n\r\nimport React from 'react'\r\n\r\n\r\nexport default function Loading() {\r\n    return (\r\n      <div className=\"d-flex justify-content-center align-items-center vh-100 bg-light\">\r\n        <div className=\"text-center\">\r\n          <div className=\"spinner-border text-primary\" role=\"status\" style={{ width: \"3rem\", height: \"3rem\" }}>\r\n            <span className=\"visually-hidden\">Loading...</span>\r\n          </div>\r\n          <p className=\"mt-3 fs-5\">Loading, please wait...</p>\r\n        </div>\r\n      </div>\r\n    )\r\n  }\r\n  "],"names":[],"mappings":";;;;AAEA;AAFA;;;AAKe,SAAS;IACpB,qBACE,8OAAC;QAAI,WAAU;kBACb,cAAA,8OAAC;YAAI,WAAU;;8BACb,8OAAC;oBAAI,WAAU;oBAA8B,MAAK;oBAAS,OAAO;wBAAE,OAAO;wBAAQ,QAAQ;oBAAO;8BAChG,cAAA,8OAAC;wBAAK,WAAU;kCAAkB;;;;;;;;;;;8BAEpC,8OAAC;oBAAE,WAAU;8BAAY;;;;;;;;;;;;;;;;;AAIjC","debugId":null}}]
+}
