@@ -1,4 +1,4 @@
-export const ApiUrl = "https://seedverify-3.onrender.com"
+export const ApiUrl = "http://localhost:5200"
 
 
 

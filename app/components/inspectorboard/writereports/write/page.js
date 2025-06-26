@@ -11,7 +11,7 @@ import { ApiUrl } from '@/helpers/ApiUrl';
 const ReportGenerator = () => {
   const [report, setReport] = useState({
     reportBody: "",
-            reportDate: new Date().toISOString().split('T')[0] ,
+      reportDate: new Date().toISOString().split('T')[0] ,
             reportType: "",
             reportTitle: "",
 
@@ -97,7 +97,7 @@ const ReportGenerator = () => {
     doc.text(`Type: ${report.reportType.charAt(0).toUpperCase() + report.reportType.slice(1)}`, margin, yPosition);
     yPosition += lineHeight;
     
-    doc.text(`Date: ${new Date(report.reportBody).toLocaleDateString()}`, margin, yPosition);
+    doc.text(`Date: ${new Date(report.reportDate).toLocaleDateString()}`, margin, yPosition);
     yPosition += lineHeight * 2;
     
     

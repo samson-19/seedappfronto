@@ -127,7 +127,7 @@ export default function Users() {
         </div>
         
         <div>
-          <h5 className="mb-1">{farmer.fullname}</h5>
+          <h5 className="mb-1">{farmer.first_name} {farmer.last_name}</h5>
           <p className="mb-1 text-muted">{farmer.email}</p>
           <span className="badge bg-primary rounded-pill">{farmer.role}</span>
         </div>

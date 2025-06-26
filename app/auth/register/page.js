@@ -13,7 +13,7 @@ export default function Register() {
     const mssg = useSelector((state) => state.userRdcr.mssg)
 
 const[formData, setFormData] = useState({
-  email: "", password: "", fullname: ""
+  email: "", password: "", first_name: "", last_name: ""
 })
 
 const [loading, setLoading] = useState(false);
@@ -48,7 +48,7 @@ return (
     <Row className="justify-content-md-center">
 
     <Col xs={12} md={6}>
-  <h3 className='text-center'>Welcome!</h3>
+  <h3 className='text-center'> Welcome!</h3>
   <div className="text-center text-danger">
 
   {mssg && ( <h3>{mssg}</h3>)}
@@ -57,18 +57,33 @@ return (
   
   <Form onSubmit={handleSubmit}>
 
-  <Form.Group className="mb-3" controlId="formBasicName">
-      <Form.Label>Full Name</Form.Label>
+  <Form.Group className="mb-3" controlId="formBasicFirstName">
+      <Form.Label>First Name</Form.Label>
       <Form.Control
         type="text"
-        name="fullname"
-            value={formData.fullname}
+        name="first_name"
+            value={formData.first_name}
             onChange={handleInputChange}
             
         
-        placeholder="write your name"
+        placeholder="write your first name"
       />
     </Form.Group>
+
+    <Form.Group className="mb-3" controlId="formBasicLastName">
+      <Form.Label>Last Name</Form.Label>
+      <Form.Control
+        type="text"
+        name="last_name"
+            value={formData.last_name}
+            onChange={handleInputChange}
+            
+        
+        placeholder="write your last name"
+      />
+    </Form.Group>
+
+
 
 
     <Form.Group className="mb-3" controlId="formBasicEmail">

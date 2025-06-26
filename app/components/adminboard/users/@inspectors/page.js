@@ -152,7 +152,7 @@ export default function Inspector() {
             <div className="modal-body">
               {currentInspector && (
                 <div>
-                  <p><strong>Name:</strong> {currentInspector.fullname}</p>
+                  <p><strong>Name:</strong> {currentInspector.first_name} {currentInspector.last_name}</p>
                   <p><strong>Email:</strong> {currentInspector.email}</p>
                   <p><strong>Current Role:</strong> {currentInspector.role}</p>
                   
